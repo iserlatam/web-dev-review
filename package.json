@@ -1,0 +1,16 @@
+{
+  "name": "introduccion-a-la-web",
+  "version": "1.0.0",
+  "description": "> :speech_balloon: Este repositorio tiene como objetivo ir almacenando los apuntes y resúmenes que se crean posterior a las clases presenciales o virtuales. Recuerde que la práctica hace al maestro",
+  "main": "index.js",
+  "scripts": {
+    "start": "node c_1/api/index.js --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.19.2"
+  }
+}
