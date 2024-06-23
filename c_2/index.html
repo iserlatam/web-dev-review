@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Using Ajax for HTTP requests</title>
+</head>
+<body>
+    <h1>This is a request</h1>
+    <div id="content"></div>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(() => {
+            $.ajax({
+                method: "GET",
+                url: 'http://localhost:3000/products',
+                contentType: "application/json",
+                success: function(result) {
+                    result.forEach(resource => {
+                        $('#content').append(`${resource.name} `)
+                    });
+                }
+            })
+        })
+    </script>
+</body>
+</html>

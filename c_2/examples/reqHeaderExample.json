@@ -1,0 +1,20 @@
+{
+    "header": {
+        "status": 200,
+        "authorization": {
+            "type": "Bearer token",
+            "value": "tk_ajsjowhcopchspskassa525sajsh"
+        },
+        "content-type": "application/json",
+        "content-type": "img/jpg",
+        "content-type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+        "content-type": "application/pdf",
+        "body": {
+            "user": {
+                "username": "admin1234",
+                "role": "admin",
+                "token_expired": "22/06/2024 21:00:00"
+            }
+        }
+    }
+}
